@@ -1,0 +1,209 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+main
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../img/powder.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 48%;;
+    animation: shrink 19s infinite alternate;
+    
+}
+
+@keyframes shrink {
+  0% {
+      background-size: 40% 90%
+ 
+  }
+  100% {
+    background-size: 100% 90%;
+
+  }
+}
+
+h2 {
+    display:flex;
+    text-shadow: 2px 2px 24px rgb(0, 140, 255);
+    font-size: 4vw;  
+    font-style:oblique;
+    font-weight:900;
+    position: absolute;
+    top:34%;
+    color:#f8f2f2;
+    animation: profile 19s infinite alternate;
+}
+@keyframes profile {
+    0%{
+     transform: scale(.4) rotate(0deg);
+    }
+      100%{
+       transform: scale(1.0) rotate(0deg);
+    
+      }
+    
+    }
+
+h2:hover {
+
+  color:rgb(0, 89, 255);
+  text-shadow: #e2e2e2;
+    
+}
+
+/*------Fake opacity layer for powder bg---you have to add div and class bg to usegreyed out, doesnt work for this site*/
+ /*div.bg{
+    width: 1200px;
+    height: 600px;
+    display: block;
+    position: relative;
+}
+
+div.bg::after{
+    content: "";
+    background: url(\image.png);
+    background-position: center;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+/*----------------Top home button fixed every page icon--------------*/
+
+/*-------------------  center nav icons section----------------*/
+/*-------------------- this first part sets the shrink and move of the icons---*/
+
+.socialMedia{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.sci {
+    position:sticky;
+    display: flex;
+    animation: move 19s infinite alternate
+    
+}
+@keyframes move{
+    0%{
+     transform: scale(.4) rotate(0deg);
+    }
+      100%{
+       transform: scale(1.75) rotate(0deg);
+    
+      }
+    
+    }
+    /*-------------------- style of list icons for center nav---*/
+.sci li{
+    position: relative;
+    list-style: none;
+}
+/* shape of buttons */
+.sci li a {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0px;
+    text-decoration: none;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgb(0, 89, 255);
+    color: #e2e2e2;
+    border-radius: 0%;
+    box-shadow: none;
+    transition: 2s;     
+    
+}
+
+
+ /*-------- Border frame  and Hover for icons-------- */
+.sci li a::before
+{
+    content: '';
+    position: absolute;
+    top:10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 0;
+    
+}
+.sci li a:hover {
+    color:rgb(0, 89, 255);
+    transform: translateY(-20px);
+    text-decoration: none;
+    box-shadow: 2px 24px 10px (rgba(0,0,0,0.1));
+    transition: 0.5s;
+}
+
+
+
+
+
+
+/*------------------- data text hover effect section---------------*/
+
+.sci li::before{
+    content: attr(data-text);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-25%,calc(-5% + 100px));
+    font-size: 4vw;
+    pointer-events: none;
+    font-weight: 900;
+    font-style: oblique;
+    text-shadow: #e2e2e2;
+    color:rgb(0, 89, 255);
+    transition: 0.5s;
+    opacity: 0;
+    align-content: center;
+}
+
+.sci li:hover::before{
+    content:attr(data-text);
+    opacity: .7;
+    transform: translate(-25%,calc(-5% + 100px));
+    align-content: center;
+}
+
+
+/*-----ABOUT HTML SECTION--------------*/
+
+section#about.about {
+  background-image: linear-gradient(rgb(255, 255, 255),aliceblue,rgb(67, 136, 197)); 
+}
+
+h3 {
+    margin-top:10%;
+    margin-bottom: 25%;
+    position: relative;
+    color:#fff;
+    font-style: oblique;
+    text-align: center;
+    font-weight: 900;
+    opacity: 0.9;
+    text-shadow: 2px 2px 24px rgb(0, 153, 255);
+    font-size: 4vw;  
+}
+    h3:hover {
+    
+      color:rgb(0, 89, 255);
+      text-shadow: #e2e2e2;
+        
+    }

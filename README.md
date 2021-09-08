@@ -7,4 +7,4 @@ The second project web-tempalte is a tempalte for a website. It uses a hover eff
 attempt at a project when doing front -end and it is really great.
 
 The third project is a python script I worked on after being inspired by a mentor who was helping with front-end. I eventually went down a rabbit hole and found a great YouTube channel by John Rooney
-and teh result was a full fledged pyhton webscraper for stock data. 
+and the result was a full fledged pyhton webscraper for stock data. 

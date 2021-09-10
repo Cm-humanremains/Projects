@@ -1,4 +1,4 @@
-# Projects
+# Side Projects
 
 
 The first project I called Hello World is just an animated CSS background using font awesome icons that move across that background screen. One of my first projects when doing front end. 
